@@ -7,6 +7,8 @@ import akka.actor.Props;
 public class GreetingMain {
 	
 	public static void main(String[] args) {
+		
+		
         ActorSystem system = ActorSystem.create("MySystem");
         ActorRef greeter1, greeter2;
         greeter1 = system.actorOf( Props.create(GreetingActor.class), "greeter1" );
